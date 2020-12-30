@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+main {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.15);
+  max-height: 400px;
+  max-width: 360px;
+  margin: auto;
+  margin-top: 170px;
+  overflow: hidden;
+}
+
+header {
+  /* to remove wierd line at end of pattern */
+  background-size: cover;
+  background-image: url(images/bg-pattern-card.svg);
+  height: 150px;
+  position: relative;
+}
+
+.avatar {
+  border-radius: 50%;
+  display: inline-block;
+  height: 64px;
+  /* to get the image in the middle of the card */
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-85%);
+  width: 64px;
+}
+
+.avatar img {
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.content {
+  text-align: center;
+  padding-top: 70px;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+h2 .age {
+  opacity: 0.5;
+  display: inline-block;
+  margin-left: 0.4em;
+  margin-bottom: 0.5em;
+}
+
+.label {
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-top: 25px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+small {
+  font-size: 0.65em;
+  opacity: 0.5;
+  padding: 10px;
+}
